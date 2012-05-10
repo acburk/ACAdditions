@@ -49,4 +49,6 @@
 + (NSString*)persistentStoreCoordinatorFile;
 + (NSFetchRequest*)fetchRequestOnEntity:(NSEntityDescription*)inEntityDescription 
                           withPredicate:(id)stringOrPredicate, ...;
++ (void)saveContext;
++ (void)saveContext:(NSManagedObjectContext*)context;
 @end
