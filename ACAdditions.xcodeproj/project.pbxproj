@@ -8,13 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		4B2E0834155B99560003C1B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2E0833155B99560003C1B9 /* Foundation.framework */; };
-		4B2E083A155B99560003C1B9 /* ACAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E0839155B99560003C1B9 /* ACAdditions.m */; };
 		4B2E0842155B99560003C1B9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2E0841155B99560003C1B9 /* SenTestingKit.framework */; };
 		4B2E0844155B99560003C1B9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2E0843155B99560003C1B9 /* UIKit.framework */; };
 		4B2E0845155B99560003C1B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2E0833155B99560003C1B9 /* Foundation.framework */; };
 		4B2E0848155B99560003C1B9 /* libACAdditions.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2E0830155B99560003C1B9 /* libACAdditions.a */; };
 		4B2E084E155B99560003C1B9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B2E084C155B99560003C1B9 /* InfoPlist.strings */; };
 		4B2E0851155B99560003C1B9 /* ACAdditionsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E0850155B99560003C1B9 /* ACAdditionsTests.m */; };
+		4B2E085F155B9D980003C1B9 /* ACCoreData.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E085D155B9D980003C1B9 /* ACCoreData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2E0860155B9D980003C1B9 /* ACCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E085E155B9D980003C1B9 /* ACCoreData.m */; };
+		4B2E0863155B9DF50003C1B9 /* CGCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E0861155B9DF40003C1B9 /* CGCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2E0864155B9DF50003C1B9 /* CGCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E0862155B9DF40003C1B9 /* CGCommon.m */; };
+		4B2E0866155B9EB20003C1B9 /* ACLogging.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E0865155B9EB20003C1B9 /* ACLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2E086E155BA18A0003C1B9 /* NSString+ACAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E086C155BA18A0003C1B9 /* NSString+ACAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2E086F155BA18A0003C1B9 /* NSString+ACAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E086D155BA18A0003C1B9 /* NSString+ACAdditions.m */; };
+		4B2E0872155BA3600003C1B9 /* UIView+ACAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E0870155BA35F0003C1B9 /* UIView+ACAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2E0873155BA3600003C1B9 /* UIView+ACAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E0871155BA3600003C1B9 /* UIView+ACAdditions.m */; };
+		4B2E0876155BA3F50003C1B9 /* UIImage+ACAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E0874155BA3F50003C1B9 /* UIImage+ACAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2E0877155BA3F50003C1B9 /* UIImage+ACAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E0875155BA3F50003C1B9 /* UIImage+ACAdditions.m */; };
+		4B2E0879155BA6D80003C1B9 /* ACAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E0878155BA6D80003C1B9 /* ACAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2E087C155BA9990003C1B9 /* ACAlerts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E087A155BA9990003C1B9 /* ACAlerts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2E087D155BA9990003C1B9 /* ACAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E087B155BA9990003C1B9 /* ACAlerts.m */; };
+		4B2E0880155BAA8F0003C1B9 /* ACCalculations.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E087E155BAA8F0003C1B9 /* ACCalculations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B2E0881155BAA8F0003C1B9 /* ACCalculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E087F155BAA8F0003C1B9 /* ACCalculations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +45,30 @@
 /* Begin PBXFileReference section */
 		4B2E0830155B99560003C1B9 /* libACAdditions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libACAdditions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2E0833155B99560003C1B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		4B2E0837155B99560003C1B9 /* ACAdditions-Prefix.pch */ = {isa = PBXFileReference; path = "ACAdditions-Prefix.pch"; sourceTree = "<group>"; };
-		4B2E0838155B99560003C1B9 /* ACAdditions.h */ = {isa = PBXFileReference; path = ACAdditions.h; sourceTree = "<group>"; };
-		4B2E0839155B99560003C1B9 /* ACAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACAdditions.m; sourceTree = "<group>"; };
+		4B2E0837155B99560003C1B9 /* ACAdditions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ACAdditions-Prefix.pch"; sourceTree = "<group>"; };
 		4B2E0840155B99560003C1B9 /* ACAdditionsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ACAdditionsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B2E0841155B99560003C1B9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		4B2E0843155B99560003C1B9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		4B2E084B155B99560003C1B9 /* ACAdditionsTests-Info.plist */ = {isa = PBXFileReference; path = "ACAdditionsTests-Info.plist"; sourceTree = "<group>"; };
+		4B2E084B155B99560003C1B9 /* ACAdditionsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ACAdditionsTests-Info.plist"; sourceTree = "<group>"; };
 		4B2E084D155B99560003C1B9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		4B2E084F155B99560003C1B9 /* ACAdditionsTests.h */ = {isa = PBXFileReference; path = ACAdditionsTests.h; sourceTree = "<group>"; };
+		4B2E084F155B99560003C1B9 /* ACAdditionsTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ACAdditionsTests.h; sourceTree = "<group>"; };
 		4B2E0850155B99560003C1B9 /* ACAdditionsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ACAdditionsTests.m; sourceTree = "<group>"; };
+		4B2E085D155B9D980003C1B9 /* ACCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCoreData.h; sourceTree = "<group>"; };
+		4B2E085E155B9D980003C1B9 /* ACCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCoreData.m; sourceTree = "<group>"; };
+		4B2E0861155B9DF40003C1B9 /* CGCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGCommon.h; sourceTree = "<group>"; };
+		4B2E0862155B9DF40003C1B9 /* CGCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGCommon.m; sourceTree = "<group>"; };
+		4B2E0865155B9EB20003C1B9 /* ACLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACLogging.h; sourceTree = "<group>"; };
+		4B2E086C155BA18A0003C1B9 /* NSString+ACAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ACAdditions.h"; sourceTree = "<group>"; };
+		4B2E086D155BA18A0003C1B9 /* NSString+ACAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACAdditions.m"; sourceTree = "<group>"; };
+		4B2E0870155BA35F0003C1B9 /* UIView+ACAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ACAdditions.h"; sourceTree = "<group>"; };
+		4B2E0871155BA3600003C1B9 /* UIView+ACAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ACAdditions.m"; sourceTree = "<group>"; };
+		4B2E0874155BA3F50003C1B9 /* UIImage+ACAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ACAdditions.h"; sourceTree = "<group>"; };
+		4B2E0875155BA3F50003C1B9 /* UIImage+ACAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ACAdditions.m"; sourceTree = "<group>"; };
+		4B2E0878155BA6D80003C1B9 /* ACAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAdditions.h; sourceTree = "<group>"; };
+		4B2E087A155BA9990003C1B9 /* ACAlerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACAlerts.h; sourceTree = "<group>"; };
+		4B2E087B155BA9990003C1B9 /* ACAlerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAlerts.m; sourceTree = "<group>"; };
+		4B2E087E155BAA8F0003C1B9 /* ACCalculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCalculations.h; sourceTree = "<group>"; };
+		4B2E087F155BAA8F0003C1B9 /* ACCalculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCalculations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +126,22 @@
 		4B2E0835155B99560003C1B9 /* ACAdditions */ = {
 			isa = PBXGroup;
 			children = (
-				4B2E0838155B99560003C1B9 /* ACAdditions.h */,
-				4B2E0839155B99560003C1B9 /* ACAdditions.m */,
+				4B2E0878155BA6D80003C1B9 /* ACAdditions.h */,
+				4B2E0865155B9EB20003C1B9 /* ACLogging.h */,
+				4B2E085D155B9D980003C1B9 /* ACCoreData.h */,
+				4B2E085E155B9D980003C1B9 /* ACCoreData.m */,
+				4B2E086C155BA18A0003C1B9 /* NSString+ACAdditions.h */,
+				4B2E086D155BA18A0003C1B9 /* NSString+ACAdditions.m */,
+				4B2E0870155BA35F0003C1B9 /* UIView+ACAdditions.h */,
+				4B2E0871155BA3600003C1B9 /* UIView+ACAdditions.m */,
+				4B2E0874155BA3F50003C1B9 /* UIImage+ACAdditions.h */,
+				4B2E0875155BA3F50003C1B9 /* UIImage+ACAdditions.m */,
+				4B2E087A155BA9990003C1B9 /* ACAlerts.h */,
+				4B2E087B155BA9990003C1B9 /* ACAlerts.m */,
+				4B2E087E155BAA8F0003C1B9 /* ACCalculations.h */,
+				4B2E087F155BAA8F0003C1B9 /* ACCalculations.m */,
+				4B2E0861155B9DF40003C1B9 /* CGCommon.h */,
+				4B2E0862155B9DF40003C1B9 /* CGCommon.m */,
 				4B2E0836155B99560003C1B9 /* Supporting Files */,
 			);
 			path = ACAdditions;
@@ -138,6 +181,15 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B2E085F155B9D980003C1B9 /* ACCoreData.h in Headers */,
+				4B2E0863155B9DF50003C1B9 /* CGCommon.h in Headers */,
+				4B2E0866155B9EB20003C1B9 /* ACLogging.h in Headers */,
+				4B2E086E155BA18A0003C1B9 /* NSString+ACAdditions.h in Headers */,
+				4B2E0872155BA3600003C1B9 /* UIView+ACAdditions.h in Headers */,
+				4B2E0876155BA3F50003C1B9 /* UIImage+ACAdditions.h in Headers */,
+				4B2E0879155BA6D80003C1B9 /* ACAdditions.h in Headers */,
+				4B2E087C155BA9990003C1B9 /* ACAlerts.h in Headers */,
+				4B2E0880155BAA8F0003C1B9 /* ACCalculations.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B2E083A155B99560003C1B9 /* ACAdditions.m in Sources */,
+				4B2E0860155B9D980003C1B9 /* ACCoreData.m in Sources */,
+				4B2E0864155B9DF50003C1B9 /* CGCommon.m in Sources */,
+				4B2E086F155BA18A0003C1B9 /* NSString+ACAdditions.m in Sources */,
+				4B2E0873155BA3600003C1B9 /* UIView+ACAdditions.m in Sources */,
+				4B2E0877155BA3F50003C1B9 /* UIImage+ACAdditions.m in Sources */,
+				4B2E087D155BA9990003C1B9 /* ACAlerts.m in Sources */,
+				4B2E0881155BAA8F0003C1B9 /* ACCalculations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +381,7 @@
 				GCC_PREFIX_HEADER = "ACAdditions/ACAdditions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -335,6 +394,7 @@
 				GCC_PREFIX_HEADER = "ACAdditions/ACAdditions-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "include/$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
