@@ -186,6 +186,10 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator_;
     NSError *error = nil;
     persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
     if (![persistentStoreCoordinator_ addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
+        if ([error code] == 134100) {
+            [ACCoreData resetCoreDataData];
+            return [self persistentStoreCoordinator:inSqlite];
+        }
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }    
