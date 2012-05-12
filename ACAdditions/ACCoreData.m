@@ -130,6 +130,7 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator_;
 }
 
 + (void)resetCoreDataData {
+    NSLog(@"Removing Core Data file");
     [[NSFileManager defaultManager] removeItemAtPath:[ACCoreData persistentStoreCoordinatorFile] error:nil];
     managedObjectModel_ = nil;
     managedObjectContext_ = nil;
