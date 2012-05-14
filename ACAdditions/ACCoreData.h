@@ -31,7 +31,7 @@
                         withPredicate:(id)stringOrPredicate, ...;
 - (NSSet *)fetchObjectsForEntityName:(NSString *)newEntityName
                        withPredicate:(id)stringOrPredicate, ...;
-- (void)save;
++ (void)saveContext;
 @end
 
 @interface ACCoreData : NSObject {
@@ -50,5 +50,4 @@
 + (NSFetchRequest*)fetchRequestOnEntity:(NSEntityDescription*)inEntityDescription 
                           withPredicate:(id)stringOrPredicate, ...;
 + (void)saveContext;
-+ (void)saveContext:(NSManagedObjectContext*)context;
 @end
