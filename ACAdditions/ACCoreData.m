@@ -213,8 +213,4 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator_;
 + (NSString*)persistentStoreCoordinatorFile {
     return [self persistentStoreCoordinatorFile:applicationName];
 }
-
-+ (void)saveContext {
-    [appManagedObjectContext saveContext];
-}
 @end
