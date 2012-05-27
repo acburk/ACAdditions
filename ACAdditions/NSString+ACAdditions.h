@@ -56,4 +56,10 @@
 
 @interface NSString (ACAdditions)
 - (BOOL)isEqualToStringSafe:(NSString*)inString;
+- (BOOL)containsString:(NSString*)needle;
+- (BOOL)containsStringAtEnd:(NSString*)needle;
+- (BOOL)containsStringAtStart:(NSString*)needle;
+- (NSString*)fileExtension;
+- (NSString*)trimStart:(NSString*)needle;
+- (NSString*)alphanumericOnly;
 @end
