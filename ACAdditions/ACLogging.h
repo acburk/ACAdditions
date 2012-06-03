@@ -9,10 +9,12 @@
 #ifndef ACAdditions_ACLogging_h
 #define ACAdditions_ACLogging_h
 
-#define LOG_DataLoad 1
+#define LOG_Debug 1
+#define LOG_DataLoad 2
+#define LOG_HTTP 4
 
 #if DEBUG|RELEASE
-#define LOG_FLAGS LOG_DataLoad
+#define LOG_FLAGS (LOG_Debug | LOG_DataLoad | LOG_HTTP)
 #if DEBUG >= 3
 #define TLog(type,...) if (type & LOG_FLAGS) NSLog(@"%@     %s,%d",[NSString stringWithFormat:__VA_ARGS__],__PRETTY_FUNCTION__, __LINE__)
 #define VLog(level,...) if (DEBUG >= level) NSLog(@"%@     %s,%d",[NSString stringWithFormat:__VA_ARGS__],__PRETTY_FUNCTION__, __LINE__)
