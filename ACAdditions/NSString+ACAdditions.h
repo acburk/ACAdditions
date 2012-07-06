@@ -55,6 +55,7 @@
 #define isIpad (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone)
 
 @interface NSString (ACAdditions)
+- (NSString *)urlencode;
 - (BOOL)isEqualToStringSafe:(NSString*)inString;
 - (BOOL)containsString:(NSString*)needle;
 - (BOOL)containsStringAtEnd:(NSString*)needle;
