@@ -30,6 +30,8 @@
 		4B2E087D155BA9990003C1B9 /* ACAlerts.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E087B155BA9990003C1B9 /* ACAlerts.m */; };
 		4B2E0880155BAA8F0003C1B9 /* ACCalculations.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B2E087E155BAA8F0003C1B9 /* ACCalculations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B2E0881155BAA8F0003C1B9 /* ACCalculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E087F155BAA8F0003C1B9 /* ACCalculations.m */; };
+		4B7F0DD315EFEFBC00F26E15 /* NSDictionary+ACAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7F0DD115EFEFBC00F26E15 /* NSDictionary+ACAdditions.h */; };
+		4B7F0DD415EFEFBC00F26E15 /* NSDictionary+ACAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F0DD215EFEFBC00F26E15 /* NSDictionary+ACAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		4B2E087B155BA9990003C1B9 /* ACAlerts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACAlerts.m; sourceTree = "<group>"; };
 		4B2E087E155BAA8F0003C1B9 /* ACCalculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACCalculations.h; sourceTree = "<group>"; };
 		4B2E087F155BAA8F0003C1B9 /* ACCalculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCalculations.m; sourceTree = "<group>"; };
+		4B7F0DD115EFEFBC00F26E15 /* NSDictionary+ACAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ACAdditions.h"; sourceTree = "<group>"; };
+		4B7F0DD215EFEFBC00F26E15 /* NSDictionary+ACAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ACAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				4B2E085E155B9D980003C1B9 /* ACCoreData.m */,
 				4B2E086C155BA18A0003C1B9 /* NSString+ACAdditions.h */,
 				4B2E086D155BA18A0003C1B9 /* NSString+ACAdditions.m */,
+				4B7F0DD115EFEFBC00F26E15 /* NSDictionary+ACAdditions.h */,
+				4B7F0DD215EFEFBC00F26E15 /* NSDictionary+ACAdditions.m */,
 				4B2E0870155BA35F0003C1B9 /* UIView+ACAdditions.h */,
 				4B2E0871155BA3600003C1B9 /* UIView+ACAdditions.m */,
 				4B2E0874155BA3F50003C1B9 /* UIImage+ACAdditions.h */,
@@ -190,6 +196,7 @@
 				4B2E0879155BA6D80003C1B9 /* ACAdditions.h in Headers */,
 				4B2E087C155BA9990003C1B9 /* ACAlerts.h in Headers */,
 				4B2E0880155BAA8F0003C1B9 /* ACCalculations.h in Headers */,
+				4B7F0DD315EFEFBC00F26E15 /* NSDictionary+ACAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +305,7 @@
 				4B2E0877155BA3F50003C1B9 /* UIImage+ACAdditions.m in Sources */,
 				4B2E087D155BA9990003C1B9 /* ACAlerts.m in Sources */,
 				4B2E0881155BAA8F0003C1B9 /* ACCalculations.m in Sources */,
+				4B7F0DD415EFEFBC00F26E15 /* NSDictionary+ACAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +456,7 @@
 				4B2E0856155B99560003C1B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B2E0857155B99560003C1B9 /* Build configuration list for PBXNativeTarget "ACAdditionsTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +465,7 @@
 				4B2E0859155B99560003C1B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

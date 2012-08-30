@@ -13,6 +13,7 @@
 #import "CGCommon.h"
 #import "ACLogging.h"
 #import "NSString+ACAdditions.h"
+#import "NSDictionary+ACAdditions.h"
 #import "UIView+ACAdditions.h"
 #import "UIImage+ACAdditions.h"
 #import "ACAlerts.h"
