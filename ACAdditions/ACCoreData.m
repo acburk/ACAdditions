@@ -54,6 +54,13 @@
                                                          inManagedObjectContext:context];
     return entityDescription;
 }
+
++ (id)objectWithId:(int)value forField:(NSString*)key {
+    NSString* pred = [NSString stringWithFormat:@"%@ == %d",key,value];
+    NSManagedObject* foundObject = [[self retrieveWithPredicate:pred] anyObject];
+    
+    return foundObject;
+}
 @end
 
 @implementation NSManagedObjectContext (OneLineFetch)

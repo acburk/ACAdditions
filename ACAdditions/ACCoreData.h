@@ -23,7 +23,7 @@
 + (void)deleteAllFromManagedObjectContext:(NSManagedObjectContext*)context;
 + (NSEntityDescription*)entityDescription;
 + (NSEntityDescription*)entityDescriptionInManagedObjectContext:(NSManagedObjectContext*)context;
-
++ (id)objectWithId:(int)value forField:(NSString*)key;
 @end
 
 @interface NSManagedObjectContext (OneLineFetch)
