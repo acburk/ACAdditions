@@ -22,4 +22,13 @@
     
     return [paramDictionary copy];
 }
+
+- (id)objectForKeyIfNotNull:(NSString*)key {
+    id value = [self objectForKey:key];
+    
+    if (value == nil || value == [NSNull null])
+        return nil;
+    
+    return value;
+}
 @end

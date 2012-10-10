@@ -10,4 +10,5 @@
 
 @interface NSDictionary (ACAdditions)
 + (NSDictionary*)dictionaryFromQueryString:(NSString*)inQueryString;
+- (id)objectForKeyIfNotNull:(NSString*)key;
 @end
