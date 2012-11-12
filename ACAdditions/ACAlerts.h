@@ -13,5 +13,5 @@
 + (void)displayShadeMessage:(NSString*)pMessage;
 + (void)removeShadeMessage;
 + (void)fadeAndRemoveShadeMessage;
-+ (void)fadeAndRemoveShadeMessageFor:(float)inTime;
++ (void)fadeAndRemoveShadeMessageFor:(float)inTime afterDelay:(float)inDelay;
 @end

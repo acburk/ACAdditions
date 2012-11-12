@@ -27,12 +27,14 @@ static UILabel* message = nil;
 		loading = nil;
 	}
 }
+
 + (void)fadeAndRemoveShadeMessage {
-	[self fadeAndRemoveShadeMessageFor:.33f];
+	[self fadeAndRemoveShadeMessageFor:.33f afterDelay:0];
 }
-+ (void)fadeAndRemoveShadeMessageFor:(float)inTime {
+
++ (void)fadeAndRemoveShadeMessageFor:(float)inTime afterDelay:(float)inDelay {
 	if (loading) {
-		[UIView animateWithDuration:inTime animations:^{ loading.alpha = 0; } completion:^(BOOL finished){ [loading removeFromSuperview]; loading = nil; }];
+		[UIView animateWithDuration:inTime delay:inDelay options:UIViewAnimationCurveEaseIn animations:^{ loading.alpha = 0; } completion:^(BOOL finished){ [loading removeFromSuperview]; loading = nil; }];
 	}
 }
 
