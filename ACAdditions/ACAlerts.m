@@ -28,8 +28,11 @@ static UILabel* message = nil;
 	}
 }
 + (void)fadeAndRemoveShadeMessage {
+	[self fadeAndRemoveShadeMessageFor:.33f];
+}
++ (void)fadeAndRemoveShadeMessageFor:(float)inTime {
 	if (loading) {
-		[UIView animateWithDuration:.33 animations:^{ loading.alpha = 0; } completion:^(BOOL finished){ [loading removeFromSuperview]; loading = nil; }];
+		[UIView animateWithDuration:inTime animations:^{ loading.alpha = 0; } completion:^(BOOL finished){ [loading removeFromSuperview]; loading = nil; }];
 	}
 }
 
