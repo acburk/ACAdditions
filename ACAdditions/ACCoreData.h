@@ -36,15 +36,16 @@
 
 @interface ACCoreData : NSObject {
 }
-@property (nonatomic, readonly, getter=managedObjectContext) NSManagedObjectContext *managedObjectContext;
-@property (nonatomic, readonly, getter=managedObjectModel) NSManagedObjectModel *managedObjectModel;
-@property (nonatomic, readonly, getter=persistentStoreCoordinator) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+@property (nonatomic, strong, getter=managedObjectContext) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong, getter=managedObjectModel) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, strong, getter=persistentStoreCoordinator) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 + (void)resetCoreDataData;
 + (NSPersistentStoreCoordinator *)persistentStoreCoordinator;
 + (NSPersistentStoreCoordinator *)persistentStoreCoordinator:(NSString*)inSqlite;
 + (NSManagedObjectModel *)managedObjectModel;
 + (NSManagedObjectModel *)managedObjectModel:(NSString*)inMOMD;
 + (NSManagedObjectContext *)managedObjectContext;
++ (void)setManagedObjectContext:(NSManagedObjectContext*)managedObjectContext;
 + (NSString*)persistentStoreCoordinatorFile:(NSString*)inSqlite;
 + (NSString*)persistentStoreCoordinatorFile;
 + (NSFetchRequest*)fetchRequestOnEntity:(NSEntityDescription*)inEntityDescription 

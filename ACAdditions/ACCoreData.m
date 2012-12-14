@@ -168,6 +168,9 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator_;
     return managedObjectContext_;
 }
 
++ (void)setManagedObjectContext:(NSManagedObjectContext *)managedObjectContext {
+    managedObjectContext_ = managedObjectContext;
+}
 
 /**
  Returns the managed object model for the application.
@@ -196,7 +199,8 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator_;
         return persistentStoreCoordinator_;
     }
     
-    NSURL *storeURL = [NSURL fileURLWithPath:[self persistentStoreCoordinatorFile:inSqlite]];
+    NSString* storeString = [self persistentStoreCoordinatorFile:inSqlite];
+    NSURL *storeURL = [NSURL fileURLWithPath:storeString];
     
     NSError *error = nil;
     persistentStoreCoordinator_ = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
@@ -215,7 +219,12 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator_;
     return [self persistentStoreCoordinator:applicationName];
 }
 + (NSString*)persistentStoreCoordinatorFile:(NSString*)inSqlite {
-    return [applicationDocumentsDirectoryString stringByAppendingPathComponent:[NSString stringWithFormat:@"%@.sqlite",inSqlite]];
+    [[NSFileManager defaultManager] createDirectoryAtPath:[applicationLibraryDirectoryString stringByAppendingPathComponent:@"Store"]
+                              withIntermediateDirectories:YES
+                                               attributes:nil
+                                                    error:nil];
+    
+    return [applicationLibraryDirectoryString stringByAppendingPathComponent:[NSString stringWithFormat:@"Store/%@.sqlite",inSqlite]];
 }
 + (NSString*)persistentStoreCoordinatorFile {
     return [self persistentStoreCoordinatorFile:applicationName];
