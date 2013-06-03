@@ -18,7 +18,9 @@
     if ([entity respondsToSelector:@selector(setCreatedDate:)]) {
         [entity performSelector:@selector(setCreatedDate:) withObject:[NSDate date]];
     }
-
+    else if ([entity respondsToSelector:@selector(setDateCreated:)]) {
+        [entity performSelector:@selector(setDateCreated:) withObject:[NSDate date]];
+    }
     return entity;
 }
 + (NSSet*)retrieveAll {
