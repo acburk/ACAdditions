@@ -34,7 +34,7 @@ static UILabel* message = nil;
 
 + (void)fadeAndRemoveShadeMessageFor:(float)inTime afterDelay:(float)inDelay {
 	if (loading) {
-		[UIView animateWithDuration:inTime delay:inDelay options:UIViewAnimationCurveEaseIn animations:^{ loading.alpha = 0; } completion:^(BOOL finished){ [loading removeFromSuperview]; loading = nil; }];
+		[UIView animateWithDuration:inTime delay:inDelay options:UIViewAnimationOptionCurveEaseIn animations:^{ loading.alpha = 0; } completion:^(BOOL finished){ [loading removeFromSuperview]; loading = nil; }];
 	}
 }
 
