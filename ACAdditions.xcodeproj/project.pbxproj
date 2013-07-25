@@ -32,6 +32,8 @@
 		4B2E0881155BAA8F0003C1B9 /* ACCalculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B2E087F155BAA8F0003C1B9 /* ACCalculations.m */; };
 		4B7F0DD315EFEFBC00F26E15 /* NSDictionary+ACAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B7F0DD115EFEFBC00F26E15 /* NSDictionary+ACAdditions.h */; };
 		4B7F0DD415EFEFBC00F26E15 /* NSDictionary+ACAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F0DD215EFEFBC00F26E15 /* NSDictionary+ACAdditions.m */; };
+		4BFDAA1C17A19A3600A700ED /* NSError+ACAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4BFDAA1A17A19A3600A700ED /* NSError+ACAdditions.h */; };
+		4BFDAA1D17A19A3600A700ED /* NSError+ACAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BFDAA1B17A19A3600A700ED /* NSError+ACAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		4B2E087F155BAA8F0003C1B9 /* ACCalculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACCalculations.m; sourceTree = "<group>"; };
 		4B7F0DD115EFEFBC00F26E15 /* NSDictionary+ACAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ACAdditions.h"; sourceTree = "<group>"; };
 		4B7F0DD215EFEFBC00F26E15 /* NSDictionary+ACAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ACAdditions.m"; sourceTree = "<group>"; };
+		4BFDAA1A17A19A3600A700ED /* NSError+ACAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+ACAdditions.h"; sourceTree = "<group>"; };
+		4BFDAA1B17A19A3600A700ED /* NSError+ACAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+ACAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +148,8 @@
 				4B2E0875155BA3F50003C1B9 /* UIImage+ACAdditions.m */,
 				4B2E087A155BA9990003C1B9 /* ACAlerts.h */,
 				4B2E087B155BA9990003C1B9 /* ACAlerts.m */,
+				4BFDAA1A17A19A3600A700ED /* NSError+ACAdditions.h */,
+				4BFDAA1B17A19A3600A700ED /* NSError+ACAdditions.m */,
 				4B2E087E155BAA8F0003C1B9 /* ACCalculations.h */,
 				4B2E087F155BAA8F0003C1B9 /* ACCalculations.m */,
 				4B2E0861155B9DF40003C1B9 /* CGCommon.h */,
@@ -197,6 +203,7 @@
 				4B2E087C155BA9990003C1B9 /* ACAlerts.h in Headers */,
 				4B2E0880155BAA8F0003C1B9 /* ACCalculations.h in Headers */,
 				4B7F0DD315EFEFBC00F26E15 /* NSDictionary+ACAdditions.h in Headers */,
+				4BFDAA1C17A19A3600A700ED /* NSError+ACAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +313,7 @@
 				4B2E087D155BA9990003C1B9 /* ACAlerts.m in Sources */,
 				4B2E0881155BAA8F0003C1B9 /* ACCalculations.m in Sources */,
 				4B7F0DD415EFEFBC00F26E15 /* NSDictionary+ACAdditions.m in Sources */,
+				4BFDAA1D17A19A3600A700ED /* NSError+ACAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
