@@ -18,5 +18,6 @@
 #import "UIImage+ACAdditions.h"
 #import "ACAlerts.h"
 #import "ACCalculations.h"
+#import "NSError+ACAdditions.h"
 
 #endif

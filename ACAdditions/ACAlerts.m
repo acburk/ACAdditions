@@ -58,6 +58,7 @@ static UILabel* message = nil;
 	message.textColor = [UIColor whiteColor];
 	message.font = [UIFont boldSystemFontOfSize:24];
 	message.text = pMessage;
+    message.numberOfLines = 3;
 	[loading addSubview:message];
 	
 	UIActivityIndicatorView* ai = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
