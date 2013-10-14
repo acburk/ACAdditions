@@ -63,6 +63,16 @@
     
     return foundObject;
 }
+
++ (id)objectWithObjectId:(NSManagedObjectID*)objectId {
+    NSManagedObject* foundObject = [appManagedObjectContext objectWithID:objectId];
+    
+    if ([foundObject isKindOfClass:[self class]]) {
+        return foundObject;
+    }
+    
+    return nil;
+}
 @end
 
 @implementation NSManagedObjectContext (OneLineFetch)

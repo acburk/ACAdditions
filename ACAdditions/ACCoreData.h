@@ -24,6 +24,7 @@
 + (NSEntityDescription*)entityDescription;
 + (NSEntityDescription*)entityDescriptionInManagedObjectContext:(NSManagedObjectContext*)context;
 + (id)objectWithId:(int)value forField:(NSString*)key;
++ (id)objectWithObjectId:(NSManagedObjectID*)objectId;
 @end
 
 @interface NSManagedObjectContext (OneLineFetch)
