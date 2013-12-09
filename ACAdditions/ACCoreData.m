@@ -221,7 +221,8 @@ static NSPersistentStoreCoordinator *persistentStoreCoordinator_;
                                                              URL:storeURL
                                                          options:@{
                                                                    NSMigratePersistentStoresAutomaticallyOption : @YES,
-                                                                         NSInferMappingModelAutomaticallyOption : @YES
+                                                                         NSInferMappingModelAutomaticallyOption : @YES,
+                                                                   NSSQLitePragmasOption : @{@"journal_mode" : @"DELETE"}
                                                                     }
                                                            error:&error]) {
         if ([error code] == 134100) {
