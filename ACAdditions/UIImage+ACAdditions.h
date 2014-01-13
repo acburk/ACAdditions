@@ -11,4 +11,5 @@
 @interface UIImage (ACAdditions)
 - (UIImage *)resizeToFrame:(CGSize)newSize;
 - (UIImage *)resizeToSize:(CGSize)newSize;
+- (UIImage *)imageWithGaussianBlur;
 @end
